@@ -1,0 +1,100 @@
+PowerShell 7.5.0
+─ ipython
+Python 3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.26.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import requests
+
+In [2]: requests.get("http://127.0.0.1:8000").content
+Out[2]: b'{"message":"Hello World"}'
+
+In [3]: requests.post("http://127.0.0.1:8000").content
+Out[3]: b'{"detail":"Method Not Allowed"}'
+
+In [4]: requests.get("http://127.0.0.1:8000").content
+Out[4]: b'{"message":"Hello World"}'
+
+In [5]: requests.get("http://127.0.0.1:8000").content
+Out[5]: b'{"message":"Hello World"}'
+
+In [6]: requests.get("http://127.0.0.1:8000/upload").content
+Out[6]: b'{"detail":"Method Not Allowed"}'
+
+In [7]: requests.post("http://127.0.0.1:8000/upload").content
+Out[7]: b'{"detail":[{"type":"missing","loc":["query","data"],"msg":"Field required","input":null}]}'
+
+In [8]: requests.post("http://127.0.0.1:8000/upload?data=world").content
+Out[8]: b'{"link":"hello world"}'
+
+In [9]: requests.post("http://127.0.0.1:8000/upload?data=world").content
+Out[9]: b'{"link":"hello world"}'
+
+In [10]: requests.post("http://127.0.0.1:8000/upload?data=world").content
+Out[10]: b'{"link":"hello world"}'
+
+In [11]: requests.post("http://127.0.0.1:8000/upload", files={"data": b"world"}).content
+Out[11]: b'{"detail":[{"type":"missing","loc":["query","data"],"msg":"Field required","input":null}]}'
+
+In [12]: requests.post("http://127.0.0.1:8000/upload", files={"data": b"world"}).content
+Out[12]: b'{"detail":[{"type":"missing","loc":["query","data"],"msg":"Field required","input":null}]}'
+
+In [13]: requests.post("http://127.0.0.1:8000/upload", files={"data": b"world"}).content
+Out[13]: b'{"link":"hello b\'world\'"}'
+
+In [14]: requests.post("http://127.0.0.1:8000/upload?data=world").content
+Out[14]: b'{"detail":[{"type":"missing","loc":["body","data"],"msg":"Field required","input":null}]}'
+
+In [15]: requests.post("http://127.0.0.1:8000/upload", files={"data": "world"}).content
+Out[15]: b'{"link":"hello b\'world\'"}'
+
+In [16]: import os
+
+In [17]: os.curdir
+Out[17]: '.'
+
+In [18]: os.path.abspath(os.curdir)
+Out[18]: 'C:\\Users\\mario'
+
+In [19]: os.listdir("C:/buff")
+Out[19]:
+['.vs',
+ '01935b51-fc3f-7406-971c-df4ff6da631b-3.log',
+ '115652_autosave.blend',
+ '78C18229445641CFBD991F489554D74E',
+ 'ABBYY FineReader 15',
+ 'ABBYY FineReader 15.7z',
+ 'alvr',
+ 'badapple0001-6702 (2).mp4',
+ 'badapple0001-6702.mkv',
+ 'badapple0001-6702.mp4',
+ 'badapple0001-6702.webm',
+ 'bin',
+ 'control',
+ 'ctf',
+ 'deps',
+ 'desktop.ini',
+ 'Disco Elysium',
+ 'docker-minecraft-server',
+ 'exam',
+ 'index.html',
+ 'llamacpp',
+ 'Movavi Screen Recorder 21.7z',
+ 'rXe9Q.png',
+ 'test.js',
+ 'test.txt',
+ 'testing',
+ 'test_siyuan',
+ 'tree.gexf',
+ 'tree.gml',
+ 'tree.pickle',
+ 'tree.png',
+ 'VBCABLE_Driver_Pack43',
+ 'VSC']
+
+In [20]: os.system("cat C:/buff/test.txt")
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+Out[20]: 1
+
+In [21]: with open("C:/buff/test.txt", "r") as file:... (174 KB left)
