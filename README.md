@@ -18,15 +18,17 @@ Target user: **ONLY ME** (if just according to the original code)
 
 
 ## Clipboard Search
-
+https://github.com/user-attachments/assets/3e910ffe-89d4-4372-8772-44d1f2e3927a
 
 
 ## File Search
+https://github.com/user-attachments/assets/df46a4cf-a6c6-4d61-9342-cc558e602039
+
 
 
 
 ## Link Search
-
+https://github.com/user-attachments/assets/1d145116-d588-4ecb-8666-84957d71f943
 
 
 
