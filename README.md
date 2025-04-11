@@ -17,7 +17,7 @@ Target user: **ONLY ME** :upside_down_face:(if just according to the original co
 
 
 
-## Clipboard Search :fire:
+## Clipboard/Screenshot Search :fire:
 https://github.com/user-attachments/assets/3e910ffe-89d4-4372-8772-44d1f2e3927a
 
 
@@ -41,4 +41,4 @@ this is the path for the user info:
 ***chrome://version/***
 
 
-Find the ***Profile Path***and then replace mine with it.
+Find the ***Profile Path*** and then replace mine with it.
