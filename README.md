@@ -5,14 +5,14 @@ Locally customized code to quickly upload and search for image from clipboard, f
 ***[main motivation and inspiration source](https://github.com/roma160/Windows-Google-Lens/blob/master/README.md)*** :bulb:
 
 
-:star2:***Guided and rescued by:[GOD](https://github.com/roma160)***
+:star2:***Guided and rescued by:[roma160](https://github.com/roma160)***
 (also thank u very much!) :hearts:
 
 
 Target user: **ONLY ME** :upside_down_face:(if just according to the original code)
 
 
-(if anyone else wants to use it, the customized chrome profile user date must also be customized. Not a big deal ; I'll briefly write the way in the following part.)
+(if anyone else wants to use it, the customized chrome profile user date must also be customized again. Not a big deal ; I'll briefly write the way in the following part.)
 
 
 
